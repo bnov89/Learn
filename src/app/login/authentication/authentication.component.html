@@ -1,6 +1,13 @@
 <p>
 
   authentication works!
+  {{counter}}
+  <br/>
+{{isLoggedIn}}
+  <br/>
+  <input type="text" #uname />
+  <input type="text" #passwd />
+  <button (click)="login(uname.value, passwd.value)" >Login</button>
+  <br/>
 
-{{username}} - {{isLoggedIn}}
 </p>
